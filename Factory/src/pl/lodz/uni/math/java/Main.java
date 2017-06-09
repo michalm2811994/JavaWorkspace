@@ -18,6 +18,11 @@ public class Main {
 	    newFactory.selectAllUsers();
 	    newFactory.selectUserById(1);
 	    
+	    newFactory.setSource(FactorySourcesList.WebService);
+	    newFactory.selectAllUsers();
+	    newFactory.selectUserById(1);
+	    
+	    
 	}
 	
 }

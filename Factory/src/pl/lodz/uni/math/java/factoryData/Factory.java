@@ -1,6 +1,7 @@
 package pl.lodz.uni.math.java.factoryData;
 
 import pl.lodz.uni.math.java.factoryData.factorySources.DBSource;
+import pl.lodz.uni.math.java.factoryData.factorySources.WebService;
 import pl.lodz.uni.math.java.factoryData.factorySources.XMLSource;
 import pl.lodz.uni.math.java.users.User;
 import java.util.HashMap;
@@ -14,6 +15,7 @@ public class Factory implements FactoryInterface {
 		
 		sourceMapHashMap.put(FactorySourcesList.DB, DBSource.getInstance());
 		sourceMapHashMap.put(FactorySourcesList.XML, XMLSource.getInstance());
+		sourceMapHashMap.put(FactorySourcesList.WebService, WebService.getInstance());
 		
 	}	
 	
